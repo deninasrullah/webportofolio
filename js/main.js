@@ -309,7 +309,7 @@
             zoom: 16 // Google Map ZOOM. You can change this value
         });
         $("#map").addMarker({
-            address: "Leni Shop, Jalan Melur 1, Jakasampurna, Kota Bekasi, Jawa Barat", // Your Address. Change it
+            address: "Bekasi, West Java", // Your Address. Change it
         });
     });
 
