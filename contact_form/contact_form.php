@@ -7,7 +7,7 @@ use PHPMailer\PHPMailer\Exception;
 
 if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
     //your site secret key
-    $secret = '6LdqmCAUAAAAANONcPUkgVpTSGGqm60cabVMVaO';
+    $secret = '6LdAqO0fAAAAAA02UBCCCkCBVD1Utk7Svyvr3fE1';
     //get verify response data
 
     $c = curl_init('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
