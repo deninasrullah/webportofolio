@@ -7,7 +7,7 @@ use PHPMailer\PHPMailer\Exception;
 
 if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
     //your site secret key
-    $secret = '6LdqmCAUAAAAANONcPUkgVpTSGGqm60cabVMVaON';
+    $secret = '6LdAqO0fAAAAAA02UBCCCkCBVD1Utk7Svyvr3fE1';
     //get verify response data
 
     $c = curl_init('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
@@ -28,17 +28,17 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
             //Server settings
             //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                   // Enable verbose debug output
             $mail->isSMTP();                                           // Send using SMTP
-            $mail->Host       = 'smtp.example.com';                    // Set the SMTP server to send through
+            $mail->Host       = 'smtp.zoho.com';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                  // Enable SMTP authentication
-            $mail->Username   = 'your-smtp-user@example.com';          // SMTP username
-            $mail->Password   = 'your_password';                       // SMTP password
+            $mail->Username   = 'mail@deninasrullah.my.id';          // SMTP username
+            $mail->Password   = 'P45$w0R|)zm|<u';                       // SMTP password
             $mail->SMTPSecure = 'ssl';                                 // 'ssl' or 'tls' or Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
             $mail->Port       = 465;                                   // TCP port to connect to. For Example: 25 - Simple SMTP. 465 - SSL SMTP. 587 - TLS SMTP.
 
             //From
-            $mail->setFrom('your-smtp-user@example.com', 'Mailer');    // Add your hosting account email or server admin email
+            $mail->setFrom('mail@deninasrullah.my.id', 'Mailer');    // Add your hosting account email or server admin email
             //Recipient
-            $mail->addAddress('yourmail@example.com', 'Joe User');     // Add a recipient (your email). Add your name
+            $mail->addAddress('deninasrullah@gmail.com', 'Deni Nasrullah');     // Add a recipient (your email). Add your name
             //ReplyTo
             $mail->addReplyTo($_POST['email'], $_POST['name']);        // Do not change this line
 
