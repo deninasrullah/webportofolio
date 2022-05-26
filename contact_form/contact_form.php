@@ -46,9 +46,9 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
             $mail->isHTML(true);                                       // Set email format to HTML
             $mail->Subject = 'New message from contact form';          // Email subject. You can change this text
             
-            $fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
+            $fields = array('name' => 'Name', 'email' => 'Email', 'subject' => 'Subject', 'message' => 'Message'); // array variable name => Text to appear in the email
 
-            $emailText = nl2br("You have new message from Contact Form\n");
+            $emailText = nl2br("You have new message from Contact Form \n \n");
 
             foreach ($_POST as $key => $value) {
                 if (isset($fields[$key])) {
