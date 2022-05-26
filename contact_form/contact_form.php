@@ -36,7 +36,7 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
             $mail->Port       = 465;                                   // TCP port to connect to. For Example: 25 - Simple SMTP. 465 - SSL SMTP. 587 - TLS SMTP.
 
             //From
-            $mail->setFrom('mail@deninasrullah.my.id', 'Mailer');    // Add your hosting account email or server admin email
+            $mail->setFrom('mail@deninasrullah.my.id', 'Web Portofolio Mail');    // Add your hosting account email or server admin email
             //Recipient
             $mail->addAddress('deninasrullah@gmail.com', 'Deni Nasrullah');     // Add a recipient (your email). Add your name
             //ReplyTo
@@ -44,7 +44,7 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
 
             // Content
             $mail->isHTML(true);                                       // Set email format to HTML
-            $mail->Subject = 'New message from contact form';          // Email subject. You can change this text
+            $mail->Subject = 'Message from my Web Portofolio contact form';          // Email subject. You can change this text
             
             $fields = array('name' => 'Name', 'email' => 'Email', 'subject' => 'Subject', 'message' => 'Message'); // array variable name => Text to appear in the email
 
