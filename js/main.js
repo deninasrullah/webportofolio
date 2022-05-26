@@ -309,7 +309,7 @@
             zoom: 16 // Google Map ZOOM. You can change this value
         });
         $("#map").addMarker({
-            address: "Bekasi, West Java", // Your Address. Change it
+            address: "Bekasi, Indonesia", // Your Address. Change it
         });
     });
 
